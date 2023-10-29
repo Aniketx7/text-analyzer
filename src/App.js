@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { Fragment, useState } from 'react'
 
@@ -13,7 +12,6 @@ import {
   Route,
   Link
 } from "react-router-dom";
-
 
 function App() {
 
@@ -65,8 +63,6 @@ function App() {
 
 
 
-
-
   return (
     <>
 
@@ -79,11 +75,11 @@ function App() {
 
         {/* Textform */}
         <div className="container">
-
           <Routes>
 
-            {/* Using multiple component in single route */}
-            <Route exact path="/" element={[<TextForm heading="Enter text to analyze" mode={mode} showsAlert={showAlert} />, <About />]} />
+            <Route exact path="/" element={[<TextForm heading="Enter text to analyze" mode={mode} showsAlert={showAlert} />]} />
+
+            <Route exact path="textAnalyzer" element={[<TextForm heading="Enter text to analyze" mode={mode} showsAlert={showAlert} />]} />
 
             <Route exact path="/about" element={[<About />]} />
 

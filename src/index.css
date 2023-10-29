@@ -11,3 +11,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+textarea#Box::placeholder{
+  color:rgb(69, 69, 69);
+}

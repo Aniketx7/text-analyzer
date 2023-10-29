@@ -8,7 +8,7 @@ export default function Navbar(props) {
     return (
         <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`} >  {/*props.mode ke jagah pe light ya dark hoga (bootstrap class*/}
             <div className="container-fluid">
-                <Link className={`navbar-brand `} to="/" >{props.title}</Link>
+                <Link className="navbar-brand" to="/" >{props.title}</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -16,20 +16,6 @@ export default function Navbar(props) {
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
                             <Link className="nav-link active" aria-current="page" to="/about">About</Link>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">Docs</a>
-                        </li>
-                        <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="/">Action</a></li>
-                                <li><a className="dropdown-item" href="/">Another action</a></li>
-                                <li><hr className="dropdown-divider" /></li>
-                                <li><a className="dropdown-item" href="/">Something else here</a></li>
-                            </ul>
                         </li>
                     </ul>
                     <div className="d-flex">
